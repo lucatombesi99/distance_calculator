@@ -1,0 +1,115 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #e8eff1; /* Light blue background for a fresh look */
+    padding: 20px;
+}
+
+header {
+    background: #6a1b9a; /* Rich purple for the header */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    padding: 20px;
+    background: #fefefe; /* Slightly off-white for contrast with the container */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: #4caf50; /* Green header for the table */
+    color: white;
+}
+
+.custom-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #6a1b9a; /* Matching the header color for labels */
+}
+
+.custom-form input[type='text'],
+.custom-form input[type='email'],
+.custom-form input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: #f6f6f6; /* Light grey background for input fields */
+}
+
+.custom-form input[type='submit'] {
+    display: block;
+    width: auto;
+    padding: 12px 25px;
+    background-color: #ff9800; /* Vivid orange for the submit button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.error {
+    border: 2px solid red; /* Highlight with a red border */
+}
+
+
+.custom-form input[type='submit']:hover {
+    background-color: #fb8c00; /* Darker orange for hover effect */
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #555; /* Darker text for readability */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}

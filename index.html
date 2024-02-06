@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF08">
+    <meta name="viewport" content="width=device0width, initial0scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Distanza percorsi post diploma</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Distanza percorsi post diploma</h1>
+    </header>
+
+    <div class="container">
+
+        <main class="content">
+            <form action="#" method="post" class="custom-form" actio>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <span id="error-msg" style="color: red; display: none;"></span>    
+
+            <p>Indica per ogni materia il numero medio di ore settimanali nel tuo curriculum scolastico della scuola secondaria di secondo grado. Nella seconda colonna indica le ore medie di approfondimento con attività extrascolastiche (compiti, lettura, corsi, interessi personali). Nella terza riporta il voto medio (indicando i decimali con il punto e.g. 8.4). Nella quarta indica quanto è facile studiare per te la materia, secondo questa scala:
+                <ol start="0">
+                    <li>Molto facile - interessante;</li>
+                    <li>Relativamente facile;</li>
+                    <li>Impegnativo ma interessante;</li>
+                    <li>Impegnativo e poco interessante;</li>
+                    <li>Molto impegnativo e poco interessante.</li>
+                </ol>
+            </p>
+
+            <table id="editableTable" border="1">
+                <tr id="row1"><th> </th><th>Ore Curriculari</th><th>Ore Attività/Interessi Personali</th><th>Voto medio negli ultimi anni</th><th>Facilità Studio</th></tr>
+                <tr id="row2"><td>Biologia</td><td id="row22" contenteditable="true">0</td><td id="row23" contenteditable="true">0</td><td id="row24" contenteditable="true">0</td><td id="row25" class="editable">0</td></tr>
+                <tr id="row3"><td>Chimica</td><td id="row32" contenteditable="true">0</td><td id="row33" contenteditable="true">0</td><td id="row34" contenteditable="true">0</td><td id="row35" class="editable">0</td></tr>
+                <tr id="row4"><td>Diritto</td><td id="row42" contenteditable="true">0</td><td id="row43" contenteditable="true">0</td><td id="row44" contenteditable="true">0</td><td id="row45" class="editable">0</td></tr>
+                <tr id="row5"><td>Economia</td><td id="row52" contenteditable="true">0</td><td id="row53" contenteditable="true">0</td><td id="row54" contenteditable="true">0</td><td id="row55" class="editable">0</td></tr>
+                <tr id="row6"><td>Fisica</td><td id="row62" contenteditable="true">0</td><td id="row63" contenteditable="true">0</td><td id="row64" contenteditable="true">0</td><td id="row65" class="editable">0</td></tr>
+                <tr id="row7"><td>Informatica</td><td id="row72" contenteditable="true">0</td><td id="row73" contenteditable="true">0</td><td id="row74" contenteditable="true">0</td><td id="row75" class="editable">0</td></tr>
+                <tr id="row8"><td>Inglese</td><td id="row82" contenteditable="true">0</td><td id="row83" contenteditable="true">0</td><td id="row84" contenteditable="true">0</td><td id="row85" class="editable">0</td></tr>
+                <tr id="row9"><td>Italiano</td><td id="row92" contenteditable="true">0</td><td id="row93" contenteditable="true">0</td><td id="row94" contenteditable="true">0</td><td id="row95" class="editable">0</td></tr>
+                <tr id="row10"><td>Matematica</td><td id="row102" contenteditable="true">0</td><td id="row103" contenteditable="true">0</td><td id="row104" contenteditable="true">0</td><td id="row105" class="editable">0</td></tr>
+            </table>
+
+            <p>Finito di compilare tutti i campi, compreso il codice prescelto, calcola la tua distanza dai diversi percorsi post diploma</p>
+
+            
+            <input type="submit" id="submitButton" value="Calcola la tua distanza" form="mainForm">
+
+        </form>
+
+        <form id="resultsForm" style="display: none;">
+            <p>Questa è la tua distanza da alcuni percorsi ITS:</p>
+            
+            <table id="its_results" border="1">
+                <tr id="row_1"><th></th><th></th><th>Distanza</th><th>Ore studio aggiuntive sett.</th></tr>
+                <tr id="row_2"><td id="row2_0">Turismo</td><td id="row2_1">Turismo e benessere</td><td id="row2_2">0</td><td id="row2_3">0</td></tr>
+                <tr id="row_3"><td id="row3_0">Logistica</td><td id="row3_1">Mobilità sostenibile, logistica e mobilità delle persone e delle merci</td><td id="row3_2">0</td><td id="row3_3">0</td></tr>
+                <tr id="row_4"><td id="row4_0">Autonomazione</td><td id="row4_1">ITS Maker</td><td id="row4_2">0</td><td id="row4_3">0</td></tr>
+                <tr id="row_5"><td id="row5_0">Agroalimentare</td><td id="row5_1">ITS Tech&Food</td><td id="row5_2">0</td><td id="row5_3">0</td></tr>
+                <tr id="row_6"><td id="row6_0">Digitale</td><td id="row6_1">FITSIC</td><td id="row6_2">0</td><td id="row6_3">0</td></tr>
+                <tr id="row_7"><td id="row7_0">Biomedicale</td><td id="row7_1">ITS Biomedicale</td><td id="row7_2">0</td><td id="row7_3">0</td></tr>
+                <tr id="row_8"><td id="row8_0">Energia</td><td id="row8_1">ITS TEC</td><td id="row8_2">0</td><td id="row8_3">0</td></tr>
+                
+            </table>
+
+            <p>Questa è la tua distanza dai principali corsi di Laurea di area tecnico scientifica sanitaria:</p>
+            
+            <table id="cl_results" border="1">
+                <tr id="roW_0"><th></th><th>Distanza</th><th>Ore studio aggiuntive</th></tr>
+                <tr id="roW_2"><td id="roW2_0">Ingegneria</td><td id="roW2_1">0</td><td id="roW2_2">0</td></tr>
+                <tr id="roW_3"><td id="roW3_0">Scienze</td><td id="roW3_1">0</td><td id="roW3_2">0</td></tr>
+                <tr id="roW_4"><td id="roW4_0">Biologia</td><td id="roW4_1">0</td><td id="roW4_2">0</td></tr>
+                <tr id="roW_5"><td id="roW5_0">Farmacia</td><td id="roW5_1">0</td><td id="roW5_2">0</td></tr>
+                <tr id="roW_6"><td id="roW6_0">Agraria</td><td id="roW6_1">0</td><td id="roW6_2">0</td></tr>
+                <tr id="roW_7"><td id="roW7_0">Veterinaria</td><td id="roW7_1">0</td><td id="roW7_2">0</td></tr>
+                <tr id="roW_8"><td id="roW8_0">Medicina</td><td id="roW8_1">0</td><td id="roW8_2">0</td></tr>
+                <tr id="roW_9"><td id="roW9_0">Pr. Sanitarie</td><td id="roW9_1">0</td><td id="roW9_2">0</td></tr>
+                
+            </table>
+
+
+        </form>
+
+        </main>
+
+    </div>
+    <script src="index.min.js"></script>
+</body>
+
+</html>
